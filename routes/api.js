@@ -47,7 +47,7 @@ module.exports = function (app) {
         return res.json({valid: true})
       }
 
-    //   // Check for conflicts
+      // Check for conflicts
       const conflicts = [];
 
       if (!solver.checkRowPlacement(puzzle, row, column, value)) {
